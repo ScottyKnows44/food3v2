@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Order Form 2</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Select a condiment</h1>
+        <form action="#" method="post" class="form-horizontal">
+        <div class="form-group">
+
+            <div class="col-sm-4">
+                <repeat group="{{ @condiments }}" value="{{ @condiment }}" >
+                    <input type="checkbox" name="condiment[]" id="{{ @condiment }}" value="{{ @condiment }}">{{ ucfirst(@condiment) }}</input><br>
+                </repeat>
+            </div>
+
+        </div>
+        <div class="col-xs-3 ">
+            <input class="form-control btn btn-default"
+                   type="submit" value="Place Order">
+        </div>
+        </form>
+    </div>
+</body>
+</html>

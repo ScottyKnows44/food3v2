@@ -1,0 +1,12 @@
+{
+  "name":"sthompson/328/food3v2",
+  "authors": [
+    {
+      "name": "Scott Thompson",
+      "email": "sthompson42@mail.greenriver.edu"
+    }
+  ],
+  "require": {
+    "bcosca/fatfree-core": "dev-master"
+  }
+}
